@@ -544,8 +544,6 @@
     
     CGRect frame = [self.layouter finalFrameForPageAtIndex:self.numberOfPages - 1 inPageViewController:self];
     
-    [self.scrollView setContentInset:UIEdgeInsetsZero];
-    
     if(self.layouter.navigationType == SCPageLayouterNavigationTypeVertical) {
         [self.scrollView setContentSize:CGSizeMake(0, CGRectGetMaxY(frame) + self.layouter.contentInsets.top + self.layouter.contentInsets.bottom)];
     } else {
